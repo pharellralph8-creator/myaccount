@@ -147,6 +147,13 @@ body {
     gap: 16px;
 }
 
+@media (max-width: 480px) {
+    .balance-section {
+        padding: 16px;
+        gap: 12px;
+    }
+}
+
 .balance-card {
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
     border-radius: 16px;
@@ -159,6 +166,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+    .balance-card {
+        padding: 20px;
+        min-height: 180px;
+    }
 }
 
 .balance-card::before {
@@ -205,6 +219,12 @@ body {
     line-height: 1;
 }
 
+@media (max-width: 480px) {
+    .card-amount {
+        font-size: 32px;
+    }
+}
+
 .card-currency {
     font-size: 12px;
     opacity: 0.8;
@@ -240,6 +260,12 @@ body {
     gap: 12px;
 }
 
+@media (max-width: 480px) {
+    .quick-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
 .stat-item {
     background: white;
     border-radius: 12px;
@@ -249,6 +275,12 @@ body {
     gap: 10px;
     border: 1px solid var(--neutral-100);
     transition: all 0.2s ease;
+}
+
+@media (max-width: 480px) {
+    .stat-item {
+        padding: 12px;
+    }
 }
 
 .stat-item:hover {
@@ -306,6 +338,12 @@ body {
     padding: 0 20px 24px;
 }
 
+@media (max-width: 480px) {
+    .spending-section {
+        padding: 0 16px 20px;
+    }
+}
+
 .section-header {
     display: flex;
     align-items: center;
@@ -317,6 +355,12 @@ body {
     font-size: 18px;
     font-weight: 700;
     color: var(--neutral-900);
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 16px;
+    }
 }
 
 .see-all {
@@ -337,6 +381,13 @@ body {
     gap: 12px;
 }
 
+@media (max-width: 480px) {
+    .spending-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+
 .spending-card {
     background: white;
     border-radius: 12px;
@@ -350,6 +401,12 @@ body {
     gap: 8px;
 }
 
+@media (max-width: 480px) {
+    .spending-card {
+        padding: 12px;
+    }
+}
+
 .spending-card:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
@@ -358,6 +415,12 @@ body {
 .spending-icon {
     font-size: 28px;
     line-height: 1;
+}
+
+@media (max-width: 480px) {
+    .spending-icon {
+        font-size: 24px;
+    }
 }
 
 .spending-name {
@@ -407,6 +470,12 @@ body {
     padding: 0 20px 24px;
 }
 
+@media (max-width: 480px) {
+    .transactions-section {
+        padding: 0 16px 20px;
+    }
+}
+
 .transactions-list {
     display: flex;
     flex-direction: column;
@@ -422,6 +491,12 @@ body {
     justify-content: space-between;
     border: 1px solid var(--neutral-100);
     transition: all 0.2s ease;
+}
+
+@media (max-width: 480px) {
+    .transaction-item {
+        padding: 12px;
+    }
 }
 
 .transaction-item:hover {
@@ -585,10 +660,71 @@ body {
         max-width: 100%;
         border-radius: 0;
         box-shadow: none;
+        height: 100vh;
     }
 
-    .spending-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .content {
+        padding-bottom: 90px;
+        overflow-y: auto;
+    }
+
+    .header {
+        padding: 12px 16px;
+    }
+
+    .header-label {
+        font-size: 11px;
+    }
+
+    .greeting {
+        font-size: 15px;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .stat-label {
+        font-size: 10px;
+    }
+
+    .stat-value {
+        font-size: 13px;
+    }
+
+    .spending-name {
+        font-size: 11px;
+    }
+
+    .spending-amount {
+        font-size: 13px;
+    }
+
+    .transaction-name {
+        font-size: 13px;
+    }
+
+    .transaction-date {
+        font-size: 11px;
+    }
+
+    .transaction-amount {
+        font-size: 13px;
+    }
+
+    .transaction-type {
+        font-size: 10px;
+    }
+
+    .nav-item {
+        font-size: 10px;
+    }
+
+    .nav-item svg {
+        width: 22px;
+        height: 22px;
     }
 }
 
