@@ -1,7 +1,7 @@
 // Sample data
 const userData = {
     name: 'Adriano Curtis',
-    initial: 'Ac',
+    initial: 'A',
     balance: 60534.04,
     email: 'adriano.curtis@example.com',
     income: 5000.00,
